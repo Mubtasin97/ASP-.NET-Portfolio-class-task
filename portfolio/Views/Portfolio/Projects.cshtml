@@ -1,0 +1,55 @@
+﻿
+@{
+    ViewBag.Title = "Projects";
+}
+
+<div class="header">
+    @Html.ActionLink("Index", "Index", "Portfolio")
+    @Html.ActionLink("Bio", "Bio", "Portfolio")
+    @Html.ActionLink("Education", "Education", "Portfolio")
+    @Html.ActionLink("Reference", "Reference", "Portfolio")
+</div>
+<h1>Projects</h1>
+<style>
+    table {
+        border-collapse: collapse;
+        width: 100%;
+    }
+
+    th, td {
+        border: 1px solid black;
+        padding: 8px;
+        text-align: center;
+    }
+
+    th {
+        background-color: #f2f2f2;
+    }
+</style>
+
+<table>
+    <thead>
+        <tr>
+            <th>Course</th>
+            <th>Title</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Web Technologies</td>
+            <td>Book Store Management System</td>
+            <td>A book store management or library website showcasing projects and skills using HTML, CSS, and JavaScript.</td>
+        </tr>
+        <tr>
+            <td>C#</td>
+            <td>Uthao</td>
+            <td>A car rental application using C# and mysql</td>
+        </tr>
+        <tr>
+            <td>Java</td>
+            <td>Dhaka Wheels</td>
+            <td>A Java-based gui application that is used to find the best route and related bus service with fare.</td>
+        </tr>
+    </tbody>
+</table>
