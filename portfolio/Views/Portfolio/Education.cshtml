@@ -11,45 +11,23 @@
 </div>
 <h1>Education</h1>
 
-<style>
-    table {
-        border-collapse: collapse;
-        width: 100%;
-    }
-
-    th, td {
-        border: 2px solid black;
-        padding: 8px;
-        text-align: left;
-    }
-
-    th {
-        background-color: #f2f2f2;
-    }
-</style>
 
 
-<table>
-    <thead>
+
+<table class="table table-bordered">
+    <tr>
+        <th>Exam</th>
+        <th>GPA</th>
+        <th>Passing Year</th>
+        <th>Institution</th>
+    </tr>
+    @foreach (var item in Model)
+    {
         <tr>
-            <th>Exam</th>
-            <th>Passing Year</th>
-            <th>GPA</th>
-            <th>Institute</th>
+            <td>@item.Exam</td>
+            <td>@item.Gpa</td>
+            <td>@item.PassingYear</td>
+            <td>@item.Institution</td>
         </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>SSC</td>
-            <td>2018</td>
-            <td>5.00</td>
-            <td>Sristy College of Tangail</td>
-        </tr>
-        <tr>
-            <td>HSC</td>
-            <td>2020</td>
-            <td>5.00</td>
-            <td>Major General Mahmudul Hasan Ideal College, Tangail</td>
-        </tr>
-    </tbody>
+    }
 </table>

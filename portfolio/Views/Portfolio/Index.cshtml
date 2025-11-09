@@ -8,10 +8,15 @@
     @Html.ActionLink("Education", "Education", "Portfolio")
     @Html.ActionLink("Reference", "Reference", "Portfolio")
 </div>
-<h1>Welcome</h1>
-<p>I am <b>Mubtasin Karim</b></p>
-<p>A student of American International University Bangladesh. <br>
-    I am currently in 10th semester. And this is my simple portfolio.
+<br />
+<br />
 
+<h3>@ViewBag.welcome</h3><br />
+<h4> I am <strong>@ViewBag.name</strong></h4>
+<p> @ViewBag.outro1</p>
+<p>@ViewBag.outro2</p>
 
-    </p>
+<br />
+<br />
+
+<a class="btn btn-outline-success" href="https://github.com/mubtasin97">Github</a>
